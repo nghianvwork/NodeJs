@@ -1,0 +1,46 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'src/**/*.{js,json,scss}'",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resource/scss:src/public/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nghianvwork/NodeJs.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "nghianv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nghianvwork/NodeJs/issues"
+  },
+  "homepage": "https://github.com/nghianvwork/NodeJs#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.13.8",
+    "mongoose-slug-generator": "^1.0.4",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "sass": "^1.92.1"
+  }
+}
